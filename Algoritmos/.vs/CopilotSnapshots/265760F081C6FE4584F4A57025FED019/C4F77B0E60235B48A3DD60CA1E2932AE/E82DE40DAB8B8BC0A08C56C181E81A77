@@ -1,0 +1,55 @@
+﻿using System;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace Algoritmos
+{
+    public class FormDDA : Form
+    {
+        
+        private int x1 = 50, y1 = 50;
+        private int x2 = 300, y2 = 250;
+
+        public FormDDA()
+        {
+          
+
+            
+            this.Paint += new PaintEventHandler(FormDDA_Paint);
+        }
+
+        private void FormDDA_Paint(object? sender, PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
+            Brush brush = Brushes.Blue; 
+
+            
+            float dx = x2 - x1;
+            float dy = y2 - y1;
+
+            
+            float steps = Math.Max(Math.Abs(dx), Math.Abs(dy));
+
+           
+            float xIncrement = dx / steps;
+            float yIncrement = dy / steps;
+
+            float x = x1;
+            float y = y1;
+
+           
+            for (int i = 0; i <= steps; i++)
+            {
+                
+                int pixelX = (int)Math.Round(x);
+                int pixelY = (int)Math.Round(y);
+
+                g.FillRectangle(brush, pixelX, pixelY, 2, 2);
+
+                
+                x += xIncrement;
+                y += yIncrement;
+            }
+        }
+    }
+}

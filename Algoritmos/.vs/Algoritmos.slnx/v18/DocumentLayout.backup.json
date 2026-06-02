@@ -1,0 +1,433 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|c:\\users\\windows\\source\\repos\\algoritmos\\algoritmos\\formscanline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|solutionrelative:algoritmos\\formscanline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|c:\\users\\windows\\source\\repos\\algoritmos\\algoritmos\\formboundaryfill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|solutionrelative:algoritmos\\formboundaryfill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|c:\\users\\windows\\source\\repos\\algoritmos\\algoritmos\\formlineabasica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|solutionrelative:algoritmos\\formlineabasica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|c:\\users\\windows\\source\\repos\\algoritmos\\algoritmos\\formcirculopoli.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|solutionrelative:algoritmos\\formcirculopoli.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|c:\\users\\windows\\source\\repos\\algoritmos\\algoritmos\\formcirculotrig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|solutionrelative:algoritmos\\formcirculotrig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|c:\\users\\windows\\source\\repos\\algoritmos\\algoritmos\\formfloodfill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|solutionrelative:algoritmos\\formfloodfill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\WINDOWS\\.copilot\\plans\\plan-arreglo-de-flood-fill-y-agregado-de-nuevos-algoritmos.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|c:\\users\\windows\\source\\repos\\algoritmos\\algoritmos\\elipse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|solutionrelative:algoritmos\\elipse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\algoritmos\\elipse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|solutionrelative:algoritmos\\elipse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|c:\\users\\windows\\source\\repos\\algoritmos\\algoritmos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|solutionrelative:algoritmos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|c:\\users\\windows\\source\\repos\\algoritmos\\algoritmos\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|solutionrelative:algoritmos\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\WINDOWS\\.copilot\\plans\\plan-implementacin-de-flood-fill-animado-con-figuras-precargadas.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|c:\\users\\windows\\source\\repos\\algoritmos\\algoritmos\\formbresenham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|solutionrelative:algoritmos\\formbresenham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\algoritmos\\formbresenham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|solutionrelative:algoritmos\\formbresenham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\WINDOWS\\.copilot\\plans\\plan-arreglar-algoritmo-dda.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|c:\\users\\windows\\source\\repos\\algoritmos\\algoritmos\\formdda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|solutionrelative:algoritmos\\formdda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\WINDOWS\\.copilot\\plans\\plan-fix-form1.designer.cs-format-errror.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|c:\\users\\windows\\source\\repos\\algoritmos\\algoritmos\\formelipsereal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|solutionrelative:algoritmos\\formelipsereal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\WINDOWS\\.copilot\\plans\\plan-modernizar-el-men-principal-(form1).md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\WINDOWS\\.copilot\\plans\\plan-agregar-2-nuevos-algoritmos-(bresenham-y-elipse-del-punto-medio)-y-mejorar-la-in.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\WINDOWS\\.copilot\\plans\\plan-implementar-algoritmo-de-circunferencia-(punto-medio-8-octantes)-en-el-form-elip.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\algoritmos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|solutionrelative:algoritmos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9637693F-1515-43FA-BC45-813F6855B463}|Algoritmos\\Algoritmos.csproj|C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\algoritmos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9637693F-1515-43FA-BC45-813F6855B463}|Algoritmos\\Algoritmos.csproj|solutionrelative:algoritmos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\WINDOWS\\.copilot\\plans\\plan-implementar-cuadrcula-y-tabla-de-registro-en-formdda.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\algoritmos\\formdda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5FB6FAA5-40ED-CCBA-2C76-9EEAF9CA9D5E}|Algoritmos\\Algoritmos.csproj|solutionrelative:algoritmos\\formdda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9637693F-1515-43FA-BC45-813F6855B463}|Algoritmos\\Algoritmos.csproj|C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\algoritmos\\formdda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9637693F-1515-43FA-BC45-813F6855B463}|Algoritmos\\Algoritmos.csproj|solutionrelative:algoritmos\\formdda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\Form1.cs",
+              "RelativeDocumentMoniker": "Algoritmos\\Form1.cs",
+              "ToolTip": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\Form1.cs",
+              "RelativeToolTip": "Algoritmos\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T14:46:43.934Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormScanLine.cs",
+              "DocumentMoniker": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\FormScanLine.cs",
+              "RelativeDocumentMoniker": "Algoritmos\\FormScanLine.cs",
+              "ToolTip": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\FormScanLine.cs",
+              "RelativeToolTip": "Algoritmos\\FormScanLine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T19:21:01.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormBoundaryFill.cs",
+              "DocumentMoniker": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\FormBoundaryFill.cs",
+              "RelativeDocumentMoniker": "Algoritmos\\FormBoundaryFill.cs",
+              "ToolTip": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\FormBoundaryFill.cs",
+              "RelativeToolTip": "Algoritmos\\FormBoundaryFill.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T19:20:47.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormCirculoPoli.cs",
+              "DocumentMoniker": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\FormCirculoPoli.cs",
+              "RelativeDocumentMoniker": "Algoritmos\\FormCirculoPoli.cs",
+              "ToolTip": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\FormCirculoPoli.cs",
+              "RelativeToolTip": "Algoritmos\\FormCirculoPoli.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T19:20:28.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormCirculoTrig.cs",
+              "DocumentMoniker": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\FormCirculoTrig.cs",
+              "RelativeDocumentMoniker": "Algoritmos\\FormCirculoTrig.cs",
+              "ToolTip": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\FormCirculoTrig.cs",
+              "RelativeToolTip": "Algoritmos\\FormCirculoTrig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T19:20:14.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormLineaBasica.cs",
+              "DocumentMoniker": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\FormLineaBasica.cs",
+              "RelativeDocumentMoniker": "Algoritmos\\FormLineaBasica.cs",
+              "ToolTip": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\FormLineaBasica.cs",
+              "RelativeToolTip": "Algoritmos\\FormLineaBasica.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAgwKUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T19:19:57.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "plan-arreglo-de-flood-fill-y-agregado-de-nuevos-algoritmos.md [Versi\u00F3n preliminar]",
+              "DocumentMoniker": "C:\\Users\\WINDOWS\\.copilot\\plans\\plan-arreglo-de-flood-fill-y-agregado-de-nuevos-algoritmos.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\.copilot\\plans\\plan-arreglo-de-flood-fill-y-agregado-de-nuevos-algoritmos.md",
+              "ToolTip": "C:\\Users\\WINDOWS\\.copilot\\plans\\plan-arreglo-de-flood-fill-y-agregado-de-nuevos-algoritmos.md [Versi\u00F3n preliminar]",
+              "RelativeToolTip": "..\\..\\..\\.copilot\\plans\\plan-arreglo-de-flood-fill-y-agregado-de-nuevos-algoritmos.md [Versi\u00F3n preliminar]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-06-02T19:18:40.585Z",
+              "EditorCaption": " [Versi\u00F3n preliminar]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormFloodFill.cs",
+              "DocumentMoniker": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\FormFloodFill.cs",
+              "RelativeDocumentMoniker": "Algoritmos\\FormFloodFill.cs",
+              "ToolTip": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\FormFloodFill.cs",
+              "RelativeToolTip": "Algoritmos\\FormFloodFill.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T13:43:42.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "plan-implementacin-de-flood-fill-animado-con-figuras-precargadas.md [Versi\u00F3n preliminar]",
+              "DocumentMoniker": "C:\\Users\\WINDOWS\\.copilot\\plans\\plan-implementacin-de-flood-fill-animado-con-figuras-precargadas.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\.copilot\\plans\\plan-implementacin-de-flood-fill-animado-con-figuras-precargadas.md",
+              "ToolTip": "C:\\Users\\WINDOWS\\.copilot\\plans\\plan-implementacin-de-flood-fill-animado-con-figuras-precargadas.md [Versi\u00F3n preliminar]",
+              "RelativeToolTip": "..\\..\\..\\.copilot\\plans\\plan-implementacin-de-flood-fill-animado-con-figuras-precargadas.md [Versi\u00F3n preliminar]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-06-02T13:43:08.659Z",
+              "EditorCaption": " [Versi\u00F3n preliminar]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FormBresenham.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\FormBresenham.cs",
+              "RelativeDocumentMoniker": "Algoritmos\\FormBresenham.cs",
+              "ToolTip": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\FormBresenham.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Algoritmos\\FormBresenham.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T15:14:25.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "plan-arreglar-algoritmo-dda.md [Versi\u00F3n preliminar]",
+              "DocumentMoniker": "C:\\Users\\WINDOWS\\.copilot\\plans\\plan-arreglar-algoritmo-dda.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\.copilot\\plans\\plan-arreglar-algoritmo-dda.md",
+              "ToolTip": "C:\\Users\\WINDOWS\\.copilot\\plans\\plan-arreglar-algoritmo-dda.md [Versi\u00F3n preliminar]",
+              "RelativeToolTip": "..\\..\\..\\.copilot\\plans\\plan-arreglar-algoritmo-dda.md [Versi\u00F3n preliminar]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-05-26T15:07:15.509Z",
+              "EditorCaption": " [Versi\u00F3n preliminar]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Algoritmos\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\Form1.Designer.cs",
+              "RelativeToolTip": "Algoritmos\\Form1.Designer.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAIAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T14:48:24.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FormBresenham.cs",
+              "DocumentMoniker": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\FormBresenham.cs",
+              "RelativeDocumentMoniker": "Algoritmos\\FormBresenham.cs",
+              "ToolTip": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\FormBresenham.cs",
+              "RelativeToolTip": "Algoritmos\\FormBresenham.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAQwI4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T14:54:17.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FormElipseReal.cs",
+              "DocumentMoniker": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\FormElipseReal.cs",
+              "RelativeDocumentMoniker": "Algoritmos\\FormElipseReal.cs",
+              "ToolTip": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\FormElipseReal.cs",
+              "RelativeToolTip": "Algoritmos\\FormElipseReal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T14:54:44.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FormDDA.cs",
+              "DocumentMoniker": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\FormDDA.cs",
+              "RelativeDocumentMoniker": "Algoritmos\\FormDDA.cs",
+              "ToolTip": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\FormDDA.cs",
+              "RelativeToolTip": "Algoritmos\\FormDDA.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAwwK8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T14:55:27.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "plan-fix-form1.designer.cs-format-errror.md [Versi\u00F3n preliminar]",
+              "DocumentMoniker": "C:\\Users\\WINDOWS\\.copilot\\plans\\plan-fix-form1.designer.cs-format-errror.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\.copilot\\plans\\plan-fix-form1.designer.cs-format-errror.md",
+              "ToolTip": "C:\\Users\\WINDOWS\\.copilot\\plans\\plan-fix-form1.designer.cs-format-errror.md [Versi\u00F3n preliminar]",
+              "RelativeToolTip": "..\\..\\..\\.copilot\\plans\\plan-fix-form1.designer.cs-format-errror.md [Versi\u00F3n preliminar]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-05-26T15:03:32.555Z",
+              "EditorCaption": " [Versi\u00F3n preliminar]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "elipse.cs",
+              "DocumentMoniker": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\elipse.cs",
+              "RelativeDocumentMoniker": "Algoritmos\\elipse.cs",
+              "ToolTip": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\elipse.cs",
+              "RelativeToolTip": "Algoritmos\\elipse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T14:47:00.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "plan-modernizar-el-men-principal-(form1).md [Versi\u00F3n preliminar]",
+              "DocumentMoniker": "C:\\Users\\WINDOWS\\.copilot\\plans\\plan-modernizar-el-men-principal-(form1).md",
+              "RelativeDocumentMoniker": "..\\..\\..\\.copilot\\plans\\plan-modernizar-el-men-principal-(form1).md",
+              "ToolTip": "C:\\Users\\WINDOWS\\.copilot\\plans\\plan-modernizar-el-men-principal-(form1).md [Versi\u00F3n preliminar]",
+              "RelativeToolTip": "..\\..\\..\\.copilot\\plans\\plan-modernizar-el-men-principal-(form1).md [Versi\u00F3n preliminar]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-05-26T15:00:24.095Z",
+              "EditorCaption": " [Versi\u00F3n preliminar]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "plan-agregar-2-nuevos-algoritmos-(bresenham-y-elipse-del-punto-medio)-y-mejorar-la-in.md [Versi\u00F3n preliminar]",
+              "DocumentMoniker": "C:\\Users\\WINDOWS\\.copilot\\plans\\plan-agregar-2-nuevos-algoritmos-(bresenham-y-elipse-del-punto-medio)-y-mejorar-la-in.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\.copilot\\plans\\plan-agregar-2-nuevos-algoritmos-(bresenham-y-elipse-del-punto-medio)-y-mejorar-la-in.md",
+              "ToolTip": "C:\\Users\\WINDOWS\\.copilot\\plans\\plan-agregar-2-nuevos-algoritmos-(bresenham-y-elipse-del-punto-medio)-y-mejorar-la-in.md [Versi\u00F3n preliminar]",
+              "RelativeToolTip": "..\\..\\..\\.copilot\\plans\\plan-agregar-2-nuevos-algoritmos-(bresenham-y-elipse-del-punto-medio)-y-mejorar-la-in.md [Versi\u00F3n preliminar]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-05-26T14:53:59.282Z",
+              "EditorCaption": " [Versi\u00F3n preliminar]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "plan-implementar-algoritmo-de-circunferencia-(punto-medio-8-octantes)-en-el-form-elip.md [Versi\u00F3n preliminar]",
+              "DocumentMoniker": "C:\\Users\\WINDOWS\\.copilot\\plans\\plan-implementar-algoritmo-de-circunferencia-(punto-medio-8-octantes)-en-el-form-elip.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\.copilot\\plans\\plan-implementar-algoritmo-de-circunferencia-(punto-medio-8-octantes)-en-el-form-elip.md",
+              "ToolTip": "C:\\Users\\WINDOWS\\.copilot\\plans\\plan-implementar-algoritmo-de-circunferencia-(punto-medio-8-octantes)-en-el-form-elip.md [Versi\u00F3n preliminar]",
+              "RelativeToolTip": "..\\..\\..\\.copilot\\plans\\plan-implementar-algoritmo-de-circunferencia-(punto-medio-8-octantes)-en-el-form-elip.md [Versi\u00F3n preliminar]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-05-26T14:46:40.709Z",
+              "EditorCaption": " [Versi\u00F3n preliminar]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\Form1.cs",
+              "RelativeDocumentMoniker": "Algoritmos\\Form1.cs",
+              "ToolTip": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Algoritmos\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T14:34:59.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "elipse.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\elipse.cs",
+              "RelativeDocumentMoniker": "Algoritmos\\elipse.cs",
+              "ToolTip": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\elipse.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Algoritmos\\elipse.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T14:34:44.26Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "plan-implementar-cuadrcula-y-tabla-de-registro-en-formdda.md [Versi\u00F3n preliminar]",
+              "DocumentMoniker": "C:\\Users\\WINDOWS\\.copilot\\plans\\plan-implementar-cuadrcula-y-tabla-de-registro-en-formdda.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\.copilot\\plans\\plan-implementar-cuadrcula-y-tabla-de-registro-en-formdda.md",
+              "ToolTip": "C:\\Users\\WINDOWS\\.copilot\\plans\\plan-implementar-cuadrcula-y-tabla-de-registro-en-formdda.md [Versi\u00F3n preliminar]",
+              "RelativeToolTip": "..\\..\\..\\.copilot\\plans\\plan-implementar-cuadrcula-y-tabla-de-registro-en-formdda.md [Versi\u00F3n preliminar]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-05-26T12:12:05.476Z",
+              "EditorCaption": " [Versi\u00F3n preliminar]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\Form1.cs",
+              "RelativeDocumentMoniker": "Algoritmos\\Form1.cs",
+              "ToolTip": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Algoritmos\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T14:41:32.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "FormDDA.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\FormDDA.cs",
+              "RelativeDocumentMoniker": "Algoritmos\\FormDDA.cs",
+              "ToolTip": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\FormDDA.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Algoritmos\\FormDDA.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T15:13:43.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "FormDDA.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\FormDDA.cs",
+              "RelativeDocumentMoniker": "Algoritmos\\FormDDA.cs",
+              "ToolTip": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\FormDDA.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Algoritmos\\FormDDA.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T15:06:10.687Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

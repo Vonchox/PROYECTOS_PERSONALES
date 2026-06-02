@@ -1,0 +1,102 @@
+﻿namespace Algoritmos
+{
+    partial class Form1
+    {
+        /// <summary>
+        ///  Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        ///  Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            components = new System.ComponentModel.Container();
+            menuStrip1 = new MenuStrip();
+            algoritmos = new ToolStripMenuItem();
+            DDA = new ToolStripMenuItem();
+            imageList1 = new ImageList(components);
+            elipseToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
+            SuspendLayout();
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { algoritmos });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(1333, 28);
+            menuStrip1.TabIndex = 0;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // algoritmos
+            // 
+            algoritmos.DropDownItems.AddRange(new ToolStripItem[] { DDA, elipseToolStripMenuItem });
+            algoritmos.Name = "algoritmos";
+            algoritmos.Size = new Size(97, 24);
+            algoritmos.Text = "Algoritmos";
+            algoritmos.Click += toolStripMenuItem1_Click;
+            // 
+            // DDA
+            // 
+            DDA.Name = "DDA";
+            DDA.Size = new Size(128, 26);
+            DDA.Text = "DDA ";
+            DDA.Click += DDA_Click;
+            // 
+            // imageList1
+            // 
+            imageList1.ColorDepth = ColorDepth.Depth32Bit;
+            imageList1.ImageSize = new Size(16, 16);
+            imageList1.TransparentColor = Color.Transparent;
+            // 
+            // elipseToolStripMenuItem
+            // 
+            elipseToolStripMenuItem.Name = "elipseToolStripMenuItem";
+            elipseToolStripMenuItem.Size = new Size(224, 26);
+            elipseToolStripMenuItem.Text = "Elipse";
+            elipseToolStripMenuItem.Click += elipseToolStripMenuItem_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1333, 680);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
+            Name = "Form1";
+            Text = "DDA y Circunferencia (Algoritmos Gráficos)";
+            Load += Form1_Load;
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem algoritmos;
+        private ToolStripMenuItem DDA;
+        private ImageList imageList1;
+        private ToolStripMenuItem elipseToolStripMenuItem;
+    }
+}

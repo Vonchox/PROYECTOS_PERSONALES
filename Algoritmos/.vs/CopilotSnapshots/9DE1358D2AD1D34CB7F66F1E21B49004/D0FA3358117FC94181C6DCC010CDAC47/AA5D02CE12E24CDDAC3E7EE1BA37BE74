@@ -1,0 +1,147 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace Algoritmos
+{
+    public partial class FormFloodFill : Form
+    {
+        private Bitmap lienzo;
+        private Graphics g;
+
+        // Estructuras para la animación del Flood Fill
+        private Queue<Point> colaPixeles;
+        private Color colorReemplazo = Color.Red;
+        private Color colorObjetivo;
+        private bool animando = false;
+        private int pixelesPorIteracion = 150; // Para equilibrar velocidad de animación y tiempo
+
+        public FormFloodFill()
+        {
+            InitializeComponent();
+        }
+
+        private void FormFloodFill_Load(object sender, EventArgs e)
+        {
+            InicializarLienzo();
+        }
+
+        private void InicializarLienzo()
+        {
+            lienzo = new Bitmap(pictureBoxLienzo.Width, pictureBoxLienzo.Height);
+            g = Graphics.FromImage(lienzo);
+            g.Clear(Color.White);
+            pictureBoxLienzo.Image = lienzo;
+            colaPixeles = new Queue<Point>();
+            lblEstado.Text = "Status: Listo";
+            animando = false;
+            timerAnimacion.Stop();
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            if (animando) return;
+            InicializarLienzo();
+        }
+
+        private void btnDibujarFigura_Click(object sender, EventArgs e)
+        {
+            if (animando) return;
+
+            // Siempre Limpiar antes de dibujar para evitar solapamientos raros si se presiona varias veces
+            g.Clear(Color.White);
+
+            int tamano = (int)nudTamano.Value;
+            int centroX = pictureBoxLienzo.Width / 2;
+            int centroY = pictureBoxLienzo.Height / 2;
+
+            Pen lapiz = new Pen(Color.Black, 3);
+
+            string figura = cmbFiguras.SelectedItem.ToString();
+
+            if (figura == "Círculo")
+            {
+                g.DrawEllipse(lapiz, centroX - tamano / 2, centroY - tamano / 2, tamano, tamano);
+            }
+            else if (figura == "Rectángulo")
+            {
+                g.DrawRectangle(lapiz, centroX - tamano / 2, centroY - (tamano / 3), tamano, (int)(tamano * 0.6));
+            }
+            else if (figura == "Triángulo")
+            {
+                Point[] puntos = new Point[] 
+                {
+                    new Point(centroX, centroY - tamano / 2),
+                    new Point(centroX - tamano / 2, centroY + tamano / 2),
+                    new Point(centroX + tamano / 2, centroY + tamano / 2)
+                };
+                g.DrawPolygon(lapiz, puntos);
+            }
+
+            pictureBoxLienzo.Refresh();
+        }
+
+        private void pictureBoxLienzo_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (animando) return; // Si ya esta animando no hacer otro click
+
+            Point clickPos = e.Location;
+            colorObjetivo = lienzo.GetPixel(clickPos.X, clickPos.Y);
+
+            // Si el color del pixel ya es el de reemplazo, no hacer nada
+            if (colorObjetivo.ToArgb() == colorReemplazo.ToArgb()) return;
+
+            // Iniciar Flood Fill
+            colaPixeles.Clear();
+            colaPixeles.Enqueue(clickPos);
+
+            animando = true;
+            lblEstado.Text = "Status: Rellenando...";
+            timerAnimacion.Start();
+        }
+
+        private void timerAnimacion_Tick(object sender, EventArgs e)
+        {
+            // Procesamos un lote de pixeles por tick para que la animacion no tome horas
+            int count = 0;
+
+            while (colaPixeles.Count > 0 && count < pixelesPorIteracion)
+            {
+                Point p = colaPixeles.Dequeue();
+
+                // Validacion de bordes
+                if (p.X < 0 || p.X >= lienzo.Width || p.Y < 0 || p.Y >= lienzo.Height)
+                    continue;
+
+                Color colorActual = lienzo.GetPixel(p.X, p.Y);
+
+                // Si el color a procesar es igual al objetivo (ej. Blanco)
+                if (colorActual.ToArgb() == colorObjetivo.ToArgb())
+                {
+                    // Pintar
+                    lienzo.SetPixel(p.X, p.Y, colorReemplazo);
+
+                    // Encolar vecinos. El orden pedido es: Arriba, Derecha, Abajo, Izquierda (Norte, Este, Sur, Oeste)
+                    colaPixeles.Enqueue(new Point(p.X, p.Y - 1)); // Arriba
+                    colaPixeles.Enqueue(new Point(p.X + 1, p.Y)); // Derecha
+                    colaPixeles.Enqueue(new Point(p.X, p.Y + 1)); // Abajo
+                    colaPixeles.Enqueue(new Point(p.X - 1, p.Y)); // Izquierda
+
+                    count++;
+                }
+            }
+
+            // Refrescar pantalla despues de procesar el lote
+            pictureBoxLienzo.Refresh();
+
+            // Verificar si termino
+            if (colaPixeles.Count == 0)
+            {
+                timerAnimacion.Stop();
+                animando = false;
+                lblEstado.Text = "Status: Completado";
+            }
+        }
+    }
+}

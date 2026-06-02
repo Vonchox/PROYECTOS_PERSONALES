@@ -1,0 +1,35 @@
+﻿namespace Algoritmos
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+            this.IsMdiContainer = true;
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DDA_Click(object sender, EventArgs e)
+        {
+            FormDDA hijoDDA = new FormDDA();
+            hijoDDA.MdiParent = this;
+            hijoDDA.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void elipseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            elipse hijoElipse = new elipse();
+            hijoElipse.MdiParent = this;
+            hijoElipse.Show();
+        }
+    }
+}

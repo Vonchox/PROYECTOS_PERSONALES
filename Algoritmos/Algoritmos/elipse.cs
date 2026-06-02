@@ -1,0 +1,219 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace Algoritmos
+{
+    public partial class elipse : Form
+    {
+        private TextBox txtXC;
+        private TextBox txtYC;
+        private TextBox txtRadio;
+        private Button btnDibujar;
+        private Panel panelDibujo;
+        private DataGridView grid;
+
+        private List<Point> puntosCalculados = new List<Point>();
+        private bool drawItem = false;
+        private int centerX = 0;
+        private int centerY = 0;
+
+        public elipse()
+        {
+            InitializeComponent();
+            ConfigurarUI();
+        }
+
+        private void ConfigurarUI()
+        {
+            this.Text = "Algoritmo Circunferencia (Punto Medio / 8 Lados)";
+            this.Size = new Size(1100, 550);
+            this.BackColor = Color.FromArgb(245, 246, 250);
+            this.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+
+            Label lblXC = new Label() { Text = "Xc:", Location = new Point(10, 20), Width = 30 };
+            txtXC = new TextBox() { Location = new Point(40, 15), Width = 50, Text = "200" };
+
+            Label lblYC = new Label() { Text = "Yc:", Location = new Point(100, 20), Width = 30 };
+            txtYC = new TextBox() { Location = new Point(130, 15), Width = 50, Text = "200" };
+
+            Label lblR = new Label() { Text = "Radio:", Location = new Point(190, 20), Width = 45 };
+            txtRadio = new TextBox() { Location = new Point(235, 15), Width = 50, Text = "100" };
+
+            btnDibujar = new Button() { 
+                Text = "Círculo PM", 
+                Location = new Point(300, 13), 
+                Width = 100,
+                Height = 30,
+                FlatStyle = FlatStyle.Flat,
+                BackColor = Color.FromArgb(103, 58, 183), 
+                ForeColor = Color.White,
+                Cursor = Cursors.Hand
+            };
+            btnDibujar.FlatAppearance.BorderSize = 0;
+            btnDibujar.Click += BtnDibujar_Click;
+
+            panelDibujo = new Panel()
+            {
+                Location = new Point(10, 60),
+                Size = new Size(450, 430),
+                BackColor = Color.White,
+                BorderStyle = BorderStyle.FixedSingle
+            };
+            panelDibujo.Paint += PanelDibujo_Paint;
+
+            grid = new DataGridView()
+            {
+                Location = new Point(470, 60),
+                Size = new Size(600, 430),
+                ReadOnly = true,
+                AllowUserToAddRows = false,
+                RowHeadersVisible = false,
+                AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells,
+                BackgroundColor = Color.White,
+                BorderStyle = BorderStyle.None,
+                EnableHeadersVisualStyles = false
+            };
+            
+            grid.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(103, 58, 183);
+            grid.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            grid.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(245, 245, 245);
+
+            this.Controls.Add(lblXC);
+            this.Controls.Add(txtXC);
+            this.Controls.Add(lblYC);
+            this.Controls.Add(txtYC);
+            this.Controls.Add(lblR);
+            this.Controls.Add(txtRadio);
+            this.Controls.Add(btnDibujar);
+            this.Controls.Add(panelDibujo);
+            this.Controls.Add(grid);
+        }
+
+        private void ConfigurarColumnasGrid()
+        {
+            grid.Rows.Clear();
+            grid.Columns.Clear();
+            grid.Columns.Add("step", "Paso");
+            grid.Columns.Add("p", "Pk");
+            grid.Columns.Add("x", "x");
+            grid.Columns.Add("y", "y");
+            grid.Columns.Add("p1", "Oct.1 (x,y)");
+            grid.Columns.Add("p2", "Oct.2 (-x,y)");
+            grid.Columns.Add("p3", "Oct.3 (x,-y)");
+            grid.Columns.Add("p4", "Oct.4 (-x,-y)");
+            grid.Columns.Add("p5", "Oct.5 (y,x)");
+            grid.Columns.Add("p6", "Oct.6 (-y,x)");
+            grid.Columns.Add("p7", "Oct.7 (y,-x)");
+            grid.Columns.Add("p8", "Oct.8 (-y,-x)");
+        }
+
+        private void BtnDibujar_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(txtXC.Text, out int xc) && 
+                int.TryParse(txtYC.Text, out int yc) && 
+                int.TryParse(txtRadio.Text, out int r))
+            {
+                centerX = xc;
+                centerY = yc;
+                
+                ConfigurarColumnasGrid();
+                puntosCalculados.Clear();
+
+                CalcularCirculo(xc, yc, r);
+
+                drawItem = true;
+                panelDibujo.Invalidate(); 
+            }
+            else
+            {
+                MessageBox.Show("Por favor, ingrese valores numéricos enteros válidos.");
+            }
+        }
+
+        private void CalcularCirculo(int xc, int yc, int r)
+        {
+            int x = 0;
+            int y = r;
+            int p = 1 - r;
+            int step = 0;
+
+            AgregarPuntos(xc, yc, x, y, step, p);
+
+            while (x < y)
+            {
+                x = x + 1;
+                if (p < 0)
+                {
+                    p = p + 2 * x + 3;
+                }
+                else
+                {
+                    y = y - 1;
+                    p = p + 2 * (x - y) + 5;
+                }
+                step++;
+                AgregarPuntos(xc, yc, x, y, step, p);
+            }
+        }
+
+        private void AgregarPuntos(int xc, int yc, int x, int y, int step, int p)
+        {
+            puntosCalculados.Add(new Point(xc + x, yc - y));
+            puntosCalculados.Add(new Point(xc - x, yc - y));
+            puntosCalculados.Add(new Point(xc + x, yc + y));
+            puntosCalculados.Add(new Point(xc - x, yc + y));
+
+            puntosCalculados.Add(new Point(xc + y, yc - x));
+            puntosCalculados.Add(new Point(xc - y, yc - x));
+            puntosCalculados.Add(new Point(xc + y, yc + x));
+            puntosCalculados.Add(new Point(xc - y, yc + x));
+
+            grid.Rows.Add(step, p, x, y, 
+                $"({x}, {y})",
+                $"({-x}, {y})",
+                $"({x}, {-y})",
+                $"({-x}, {-y})",
+                $"({y}, {x})",
+                $"({-y}, {x})",
+                $"({y}, {-x})",
+                $"({-y}, {-x})");
+        }
+
+        private void PanelDibujo_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
+            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            int gridSize = 10; 
+
+            Pen gridPen = new Pen(Color.FromArgb(220, 220, 220), 1) { DashStyle = System.Drawing.Drawing2D.DashStyle.Dot };
+            for (int i = 0; i < panelDibujo.Width; i += gridSize)
+            {
+                g.DrawLine(gridPen, i, 0, i, panelDibujo.Height);
+            }
+            for (int i = 0; i < panelDibujo.Height; i += gridSize)
+            {
+                g.DrawLine(gridPen, 0, i, panelDibujo.Width, i);
+            }
+
+            Pen axisPen = new Pen(Color.Gray, 1);
+            if (centerX > 0 && centerX < panelDibujo.Width)
+                g.DrawLine(axisPen, centerX, 0, centerX, panelDibujo.Height);
+                
+            if (centerY > 0 && centerY < panelDibujo.Height)
+                g.DrawLine(axisPen, 0, centerY, panelDibujo.Width, centerY);
+
+            if (!drawItem || puntosCalculados.Count == 0) return;
+
+            Brush brush = new SolidBrush(Color.FromArgb(103, 58, 183)); // Púrpura
+            foreach (Point pt in puntosCalculados)
+            {
+                g.FillRectangle(brush, pt.X - 1, pt.Y - 1, 3, 3);
+            }
+        }
+    }
+}

@@ -1,0 +1,161 @@
+﻿namespace Algoritmos
+{
+    partial class Form1
+    {
+        private System.ComponentModel.IContainer components = null;
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.panelSidebar = new System.Windows.Forms.Panel();
+            this.btnElipseReal = new System.Windows.Forms.Button();
+            this.btnCirculo = new System.Windows.Forms.Button();
+            this.btnBresenham = new System.Windows.Forms.Button();
+            this.btnDDA = new System.Windows.Forms.Button();
+            this.panelLogo = new System.Windows.Forms.Panel();
+            this.lblLogo = new System.Windows.Forms.Label();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+
+            this.panelSidebar.SuspendLayout();
+            this.panelLogo.SuspendLayout();
+            this.SuspendLayout();
+
+            // panelSidebar
+            this.panelSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65))));
+
+            this.panelSidebar.Controls.Add(this.btnElipseReal);
+            this.panelSidebar.Controls.Add(this.btnCirculo);
+            this.panelSidebar.Controls.Add(this.btnBresenham);
+            this.panelSidebar.Controls.Add(this.btnDDA);
+            this.panelSidebar.Controls.Add(this.panelLogo);
+            this.panelSidebar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelSidebar.Location = new System.Drawing.Point(0, 0);
+            this.panelSidebar.Name = "panelSidebar";
+            this.panelSidebar.Size = new System.Drawing.Size(250, 680);
+            this.panelSidebar.TabIndex = 0;
+
+            // btnElipseReal
+            this.btnElipseReal.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnElipseReal.FlatAppearance.BorderSize = 0;
+            this.btnElipseReal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.btnElipseReal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnElipseReal.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnElipseReal.ForeColor = System.Drawing.Color.White;
+            this.btnElipseReal.Location = new System.Drawing.Point(0, 230);
+            this.btnElipseReal.Name = "btnElipseReal";
+            this.btnElipseReal.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnElipseReal.Size = new System.Drawing.Size(250, 50);
+            this.btnElipseReal.TabIndex = 4;
+            this.btnElipseReal.Text = "Elipse (Punto Medio)";
+            this.btnElipseReal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnElipseReal.UseVisualStyleBackColor = true;
+            this.btnElipseReal.Click += new System.EventHandler(this.btnElipseReal_Click);
+
+            // btnCirculo
+            this.btnCirculo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCirculo.FlatAppearance.BorderSize = 0;
+            this.btnCirculo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
+            this.btnCirculo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCirculo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCirculo.ForeColor = System.Drawing.Color.White;
+            this.btnCirculo.Location = new System.Drawing.Point(0, 180);
+            this.btnCirculo.Name = "btnCirculo";
+            this.btnCirculo.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnCirculo.Size = new System.Drawing.Size(250, 50);
+            this.btnCirculo.TabIndex = 3;
+            this.btnCirculo.Text = "Círculo (Punto Medio)";
+            this.btnCirculo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCirculo.UseVisualStyleBackColor = true;
+            this.btnCirculo.Click += new System.EventHandler(this.btnCirculo_Click);
+
+            // btnBresenham
+            this.btnBresenham.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBresenham.FlatAppearance.BorderSize = 0;
+            this.btnBresenham.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.btnBresenham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBresenham.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBresenham.ForeColor = System.Drawing.Color.White;
+            this.btnBresenham.Location = new System.Drawing.Point(0, 130);
+            this.btnBresenham.Name = "btnBresenham";
+            this.btnBresenham.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnBresenham.Size = new System.Drawing.Size(250, 50);
+            this.btnBresenham.TabIndex = 2;
+            this.btnBresenham.Text = "Línea (Bresenham)";
+            this.btnBresenham.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBresenham.UseVisualStyleBackColor = true;
+            this.btnBresenham.Click += new System.EventHandler(this.btnBresenham_Click);
+
+            // btnDDA
+            this.btnDDA.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDDA.FlatAppearance.BorderSize = 0;
+            this.btnDDA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
+            this.btnDDA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDDA.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDDA.ForeColor = System.Drawing.Color.White;
+            this.btnDDA.Location = new System.Drawing.Point(0, 80);
+            this.btnDDA.Name = "btnDDA";
+            this.btnDDA.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnDDA.Size = new System.Drawing.Size(250, 50);
+            this.btnDDA.TabIndex = 1;
+            this.btnDDA.Text = "Línea (DDA)";
+            this.btnDDA.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDDA.UseVisualStyleBackColor = true;
+            this.btnDDA.Click += new System.EventHandler(this.btnDDA_Click);
+
+            // panelLogo
+            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(43)))), ((int)(((byte)(55)))));
+            this.panelLogo.Controls.Add(this.lblLogo);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(250, 80);
+            this.panelLogo.TabIndex = 0;
+
+            // lblLogo
+            this.lblLogo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblLogo.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblLogo.ForeColor = System.Drawing.Color.White;
+            this.lblLogo.Location = new System.Drawing.Point(0, 0);
+            this.lblLogo.Name = "lblLogo";
+            this.lblLogo.Size = new System.Drawing.Size(250, 80);
+            this.lblLogo.TabIndex = 0;
+            this.lblLogo.Text = "Algoritmos Gráficos";
+            this.lblLogo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
+            // Form1
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1333, 680);
+            this.Controls.Add(this.panelSidebar);
+            this.Name = "Form1";
+            this.Text = "Visualizador de Algoritmos Gráficos";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.panelSidebar.ResumeLayout(false);
+            this.panelLogo.ResumeLayout(false);
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Panel panelSidebar;
+        private System.Windows.Forms.Panel panelLogo;
+        private System.Windows.Forms.Button btnElipseReal;
+        private System.Windows.Forms.Button btnCirculo;
+        private System.Windows.Forms.Button btnBresenham;
+        private System.Windows.Forms.Button btnDDA;
+        private System.Windows.Forms.Label lblLogo;
+        private System.Windows.Forms.ImageList imageList1;
+    }
+}

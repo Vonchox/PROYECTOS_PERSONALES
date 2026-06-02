@@ -1,0 +1,174 @@
+﻿namespace Algoritmos
+{
+    partial class FormFloodFill
+    {
+        private System.ComponentModel.IContainer components = null;
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        private void InitializeComponent()
+        {
+            components = new System.ComponentModel.Container();
+            pictureBoxLienzo = new System.Windows.Forms.PictureBox();
+            btnLimpiar = new System.Windows.Forms.Button();
+            lblFigura = new System.Windows.Forms.Label();
+            cmbFiguras = new System.Windows.Forms.ComboBox();
+            lblTamano = new System.Windows.Forms.Label();
+            nudTamano = new System.Windows.Forms.NumericUpDown();
+            btnDibujarFigura = new System.Windows.Forms.Button();
+            lblEstado = new System.Windows.Forms.Label();
+            lblClick = new System.Windows.Forms.Label();
+            timerAnimacion = new System.Windows.Forms.Timer(components);
+
+            ((System.ComponentModel.ISupportInitialize)(pictureBoxLienzo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(nudTamano)).BeginInit();
+            SuspendLayout();
+
+            // 
+            // pictureBoxLienzo
+            // 
+            pictureBoxLienzo.BackColor = System.Drawing.Color.White;
+            pictureBoxLienzo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            pictureBoxLienzo.Location = new System.Drawing.Point(12, 12);
+            pictureBoxLienzo.Name = "pictureBoxLienzo";
+            pictureBoxLienzo.Size = new System.Drawing.Size(600, 400);
+            pictureBoxLienzo.TabIndex = 0;
+            pictureBoxLienzo.TabStop = false;
+            pictureBoxLienzo.MouseClick += pictureBoxLienzo_MouseClick;
+
+            // 
+            // btnLimpiar
+            // 
+            btnLimpiar.Location = new System.Drawing.Point(628, 185);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.Size = new System.Drawing.Size(140, 35);
+            btnLimpiar.TabIndex = 1;
+            btnLimpiar.Text = "Limpiar Lienzo";
+            btnLimpiar.UseVisualStyleBackColor = true;
+            btnLimpiar.Click += btnLimpiar_Click;
+
+            // 
+            // lblFigura
+            // 
+            lblFigura.AutoSize = true;
+            lblFigura.Location = new System.Drawing.Point(625, 12);
+            lblFigura.Name = "lblFigura";
+            lblFigura.Size = new System.Drawing.Size(43, 15);
+            lblFigura.TabIndex = 2;
+            lblFigura.Text = "Figura:";
+
+            // 
+            // cmbFiguras
+            // 
+            cmbFiguras.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            cmbFiguras.FormattingEnabled = true;
+            cmbFiguras.Items.AddRange(new object[] { "Círculo", "Rectángulo", "Triángulo" });
+            cmbFiguras.Location = new System.Drawing.Point(628, 30);
+            cmbFiguras.Name = "cmbFiguras";
+            cmbFiguras.Size = new System.Drawing.Size(140, 23);
+            cmbFiguras.TabIndex = 3;
+            cmbFiguras.SelectedIndex = 0;
+
+            // 
+            // lblTamano
+            // 
+            lblTamano.AutoSize = true;
+            lblTamano.Location = new System.Drawing.Point(625, 65);
+            lblTamano.Name = "lblTamano";
+            lblTamano.Size = new System.Drawing.Size(52, 15);
+            lblTamano.TabIndex = 4;
+            lblTamano.Text = "Tamaño:";
+
+            // 
+            // nudTamano
+            // 
+            nudTamano.Location = new System.Drawing.Point(628, 83);
+            nudTamano.Maximum = new decimal(new int[] { 300, 0, 0, 0 });
+            nudTamano.Minimum = new decimal(new int[] { 20, 0, 0, 0 });
+            nudTamano.Name = "nudTamano";
+            nudTamano.Size = new System.Drawing.Size(140, 23);
+            nudTamano.TabIndex = 5;
+            nudTamano.Value = new decimal(new int[] { 100, 0, 0, 0 });
+
+            // 
+            // btnDibujarFigura
+            // 
+            btnDibujarFigura.Location = new System.Drawing.Point(628, 125);
+            btnDibujarFigura.Name = "btnDibujarFigura";
+            btnDibujarFigura.Size = new System.Drawing.Size(140, 43);
+            btnDibujarFigura.TabIndex = 6;
+            btnDibujarFigura.Text = "Dibujar Figura en el Centro";
+            btnDibujarFigura.UseVisualStyleBackColor = true;
+            btnDibujarFigura.Click += btnDibujarFigura_Click;
+
+            // 
+            // lblEstado
+            // 
+            lblEstado.AutoSize = true;
+            lblEstado.Location = new System.Drawing.Point(625, 239);
+            lblEstado.Name = "lblEstado";
+            lblEstado.Size = new System.Drawing.Size(42, 15);
+            lblEstado.TabIndex = 7;
+            lblEstado.Text = "Status:";
+
+            // 
+            // lblClick
+            // 
+            lblClick.AutoSize = true;
+            lblClick.ForeColor = System.Drawing.Color.Blue;
+            lblClick.Location = new System.Drawing.Point(625, 270);
+            lblClick.Name = "lblClick";
+            lblClick.Size = new System.Drawing.Size(140, 45);
+            lblClick.TabIndex = 8;
+            lblClick.Text = "Haz click en cualquier \r\nparte del lienzo para\r\naplicar Flood Fill.";
+
+            // 
+            // timerAnimacion
+            // 
+            timerAnimacion.Interval = 1; // Rápido, procesamos varios pixeles por tick
+            timerAnimacion.Tick += timerAnimacion_Tick;
+
+            // 
+            // FormFloodFill
+            // 
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(784, 424);
+            Controls.Add(lblClick);
+            Controls.Add(lblEstado);
+            Controls.Add(btnDibujarFigura);
+            Controls.Add(nudTamano);
+            Controls.Add(lblTamano);
+            Controls.Add(cmbFiguras);
+            Controls.Add(lblFigura);
+            Controls.Add(btnLimpiar);
+            Controls.Add(pictureBoxLienzo);
+            Name = "FormFloodFill";
+            Text = "Algoritmo Flood Fill (Animado)";
+            Load += FormFloodFill_Load;
+
+            ((System.ComponentModel.ISupportInitialize)(pictureBoxLienzo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(nudTamano)).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        private System.Windows.Forms.PictureBox pictureBoxLienzo;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Label lblFigura;
+        private System.Windows.Forms.ComboBox cmbFiguras;
+        private System.Windows.Forms.Label lblTamano;
+        private System.Windows.Forms.NumericUpDown nudTamano;
+        private System.Windows.Forms.Button btnDibujarFigura;
+        private System.Windows.Forms.Label lblEstado;
+        private System.Windows.Forms.Label lblClick;
+        private System.Windows.Forms.Timer timerAnimacion;
+    }
+}

@@ -1,0 +1,123 @@
+﻿using System;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace Algoritmos
+{
+    public class FormDDA : Form
+    {
+        private float x1 = 0, y1 = 0;
+        private float x2 = 0, y2 = 0;
+        private bool drawLine = false;
+
+        private TextBox txtX1;
+        private TextBox txtY1;
+        private TextBox txtX2;
+        private TextBox txtY2;
+        private Button btnDibujar;
+
+        public FormDDA()
+        {
+            this.Text = "Algoritmo DDA";
+            this.Size = new Size(500, 500);
+            this.BackColor = Color.White;
+
+            
+            Label lblX1 = new Label() { Text = "X1:", Location = new Point(10, 15), Width = 30 };
+            txtX1 = new TextBox() { Location = new Point(40, 10), Width = 50, Text = "50" };
+
+            Label lblY1 = new Label() { Text = "Y1:", Location = new Point(100, 15), Width = 30 };
+            txtY1 = new TextBox() { Location = new Point(130, 10), Width = 50, Text = "50" };
+
+            Label lblX2 = new Label() { Text = "X2:", Location = new Point(200, 15), Width = 30 };
+            txtX2 = new TextBox() { Location = new Point(230, 10), Width = 50, Text = "300" };
+
+            Label lblY2 = new Label() { Text = "Y2:", Location = new Point(300, 15), Width = 30 };
+            txtY2 = new TextBox() { Location = new Point(330, 10), Width = 50, Text = "250" };
+
+            btnDibujar = new Button() { Text = "Dibujar", Location = new Point(400, 10), Width = 70 };
+            btnDibujar.Click += BtnDibujar_Click;
+
+            
+            this.Controls.Add(lblX1);
+            this.Controls.Add(txtX1);
+            this.Controls.Add(lblY1);
+            this.Controls.Add(txtY1);
+            this.Controls.Add(lblX2);
+            this.Controls.Add(txtX2);
+            this.Controls.Add(lblY2);
+            this.Controls.Add(txtY2);
+            this.Controls.Add(btnDibujar);
+
+            this.Paint += new PaintEventHandler(FormDDA_Paint);
+        }
+
+        private void BtnDibujar_Click(object? sender, EventArgs e)
+        {
+            
+            if (float.TryParse(txtX1.Text, out x1) && float.TryParse(txtY1.Text, out y1) &&
+                float.TryParse(txtX2.Text, out x2) && float.TryParse(txtY2.Text, out y2))
+            {
+                drawLine = true;
+                this.Invalidate(); // Esto provoca que FormDDA_Paint se vuelva a ejecutar
+            }
+            else
+            {
+                MessageBox.Show("Por favor, ingrese valores numéricos válidos en las coordenadas.");
+            }
+        }
+
+        private void FormDDA_Paint(object? sender, PaintEventArgs e)
+        {
+            if (!drawLine) return;
+
+            Graphics g = e.Graphics;
+            Brush brush = Brushes.Blue;
+
+            float dx = x2 - x1;
+            float dy = y2 - y1;
+
+            
+            float m = dy / dx;
+
+            float x = x1;
+            float y = y1;
+
+           
+            if (Math.Abs(m) <= 1)
+            {
+                while (x <= x2)
+                {
+                    g.FillRectangle(
+                        brush,
+                        (int)Math.Round(x),
+                        (int)Math.Round(y),
+                        2,
+                        2
+                    );
+
+                    x = x + 1;
+                    y = y + m;
+                }
+            }
+            
+            else
+            {
+                while (y <= y2)
+                {
+                    g.FillRectangle(
+                        brush,
+                        (int)Math.Round(x),
+                        (int)Math.Round(y),
+                        2,
+                        2
+                    );
+
+                    y = y + 1;
+                    x = x + (1 / m);
+                }
+            }
+        }
+    }
+    }
+}
