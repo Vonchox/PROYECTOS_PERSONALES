@@ -41,7 +41,8 @@ namespace Algoritmos
 
         private void btnCirculo_Click(object sender, EventArgs e)
         {
-            elipse hijoElipse = new elipse();
+            Elipse hijoElipse = new Elipse();
+            hijoElipse.MdiParent = this;
             hijoElipse.Show();
         }
 
@@ -57,6 +58,40 @@ namespace Algoritmos
             FormFloodFill hijoFloodFill = new FormFloodFill();
             hijoFloodFill.MdiParent = this;
             hijoFloodFill.Show();
+        }
+        private void btnLineaBasica_Click(object sender, EventArgs e)
+        {
+            FormLineaBasica hijoLineaBasica = new FormLineaBasica();
+            hijoLineaBasica.MdiParent = this;
+            hijoLineaBasica.Show();
+        }
+
+        private void btnCirculoTrig_Click(object sender, EventArgs e)
+        {
+            FormCirculoTrig hijoCirculoTrig = new FormCirculoTrig();
+            hijoCirculoTrig.MdiParent = this;
+            hijoCirculoTrig.Show();
+        }
+
+        private void btnCirculoPoli_Click(object sender, EventArgs e)
+        {
+            FormCirculoPoli hijoCirculoPoli = new FormCirculoPoli();
+            hijoCirculoPoli.MdiParent = this;
+            hijoCirculoPoli.Show();
+        }
+
+        private void btnBoundaryFill_Click(object sender, EventArgs e)
+        {
+            FormBoundaryFill hjoBoundaryFill = new FormBoundaryFill();
+            hjoBoundaryFill.MdiParent = this;
+            hjoBoundaryFill.Show();
+        }
+
+        private void btnScanLine_Click(object sender, EventArgs e)
+        {
+            FormScanLine hijoScanLine = new FormScanLine();
+            hijoScanLine.MdiParent = this;
+            hijoScanLine.Show();
         }
     }
 }

@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace Algoritmos
 {
-    public partial class elipse : Form
+    public partial class Elipse : Form
     {
         private TextBox txtXC;
         private TextBox txtYC;
@@ -22,7 +22,7 @@ namespace Algoritmos
         private int centerX = 0;
         private int centerY = 0;
 
-        public elipse()
+        public Elipse()
         {
             InitializeComponent();
             ConfigurarUI();

@@ -21,7 +21,7 @@ namespace Algoritmos
         private TextBox txtTamano;
         private Button btnDibujarFigura;
         private Button btnLimpiar;
-        private Timer timerAnimacion;
+        private System.Windows.Forms.Timer timerAnimacion;
         private Label lblEstado;
 
         public FormBoundaryFill()
@@ -39,24 +39,30 @@ namespace Algoritmos
             Label lblTamano = new Label() { Text = "Tamaño:", Location = new Point(160, 20), Width = 55 };
             txtTamano = new TextBox() { Location = new Point(220, 15), Width = 50, Text = "100" };
 
-            btnDibujarFigura = new Button() { 
-                Text = "Trazar Borde", 
-                Location = new Point(280, 13), 
-                Width = 90, Height = 30,
+            btnDibujarFigura = new Button()
+            {
+                Text = "Trazar Borde",
+                Location = new Point(280, 13),
+                Width = 90,
+                Height = 30,
                 FlatStyle = FlatStyle.Flat,
                 BackColor = Color.FromArgb(76, 175, 80),
-                ForeColor = Color.White, Cursor = Cursors.Hand
+                ForeColor = Color.White,
+                Cursor = Cursors.Hand
             };
             btnDibujarFigura.FlatAppearance.BorderSize = 0;
             btnDibujarFigura.Click += BtnDibujarFigura_Click;
 
-            btnLimpiar = new Button() { 
-                Text = "Limpiar Lienzo", 
-                Location = new Point(380, 13), 
-                Width = 110, Height = 30,
+            btnLimpiar = new Button()
+            {
+                Text = "Limpiar Lienzo",
+                Location = new Point(380, 13),
+                Width = 110,
+                Height = 30,
                 FlatStyle = FlatStyle.Flat,
                 BackColor = Color.Gray,
-                ForeColor = Color.White, Cursor = Cursors.Hand
+                ForeColor = Color.White,
+                Cursor = Cursors.Hand
             };
             btnLimpiar.FlatAppearance.BorderSize = 0;
             btnLimpiar.Click += BtnLimpiar_Click;
@@ -74,8 +80,8 @@ namespace Algoritmos
             panelDibujo.MouseClick += PanelDibujo_MouseClick;
             panelDibujo.Paint += PanelDibujo_Paint;
 
-            timerAnimacion = new Timer();
-            timerAnimacion.Interval = 5; 
+            timerAnimacion = new System.Windows.Forms.Timer();
+            timerAnimacion.Interval = 5;
             timerAnimacion.Tick += TimerAnimacion_Tick;
 
             this.Controls.Add(lblFigura); this.Controls.Add(cmbFiguras);
@@ -138,12 +144,12 @@ namespace Algoritmos
 
         private void PanelDibujo_MouseClick(object? sender, MouseEventArgs e)
         {
-            if (animando || lienzo == null) return; 
+            if (animando || lienzo == null) return;
             Point clickPos = e.Location;
             Color colorActual = lienzo.GetPixel(clickPos.X, clickPos.Y);
 
             // Impedimos clics donde ya esta del color de reemplazo o donde es frontera.
-            if (colorActual.ToArgb() == colorReemplazo.ToArgb() || colorActual.ToArgb() == colorFrontera.ToArgb()) 
+            if (colorActual.ToArgb() == colorReemplazo.ToArgb() || colorActual.ToArgb() == colorFrontera.ToArgb())
                 return;
 
             colaPixeles.Clear();

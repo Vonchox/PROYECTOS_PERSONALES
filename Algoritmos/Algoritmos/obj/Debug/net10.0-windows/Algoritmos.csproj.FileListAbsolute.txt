@@ -17,3 +17,5 @@ C:\Users\WINDOWS\source\repos\Algoritmos\Algoritmos\obj\Debug\net10.0-windows\re
 C:\Users\WINDOWS\source\repos\Algoritmos\Algoritmos\obj\Debug\net10.0-windows\Algoritmos.FormDDA.resources
 C:\Users\WINDOWS\source\repos\Algoritmos\Algoritmos\obj\Debug\net10.0-windows\Algoritmos.elipse.resources
 C:\Users\WINDOWS\source\repos\Algoritmos\Algoritmos\obj\Debug\net10.0-windows\Algoritmos.FormBresenham.resources
+C:\Users\WINDOWS\source\repos\Algoritmos\Algoritmos\obj\Debug\net10.0-windows\Algoritmos.FormBoundaryFill.resources
+C:\Users\WINDOWS\source\repos\Algoritmos\Algoritmos\obj\Debug\net10.0-windows\Algoritmos.FormFloodFill.resources

@@ -1,6 +1,6 @@
 ﻿namespace Algoritmos
 {
-    partial class elipse
+    partial class Elipse
     {
         /// <summary>
         /// Required designer variable.
