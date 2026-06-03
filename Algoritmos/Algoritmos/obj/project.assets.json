@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\Algoritmos.csproj",
+      "projectUniqueName": "C:\\Users\\WINDOWS\\Documents\\GitHub\\PROYECTOS_PERSONALES\\Algoritmos\\Algoritmos\\Algoritmos.csproj",
       "projectName": "Algoritmos",
-      "projectPath": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\Algoritmos.csproj",
+      "projectPath": "C:\\Users\\WINDOWS\\Documents\\GitHub\\PROYECTOS_PERSONALES\\Algoritmos\\Algoritmos\\Algoritmos.csproj",
       "packagesPath": "C:\\Users\\WINDOWS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\WINDOWS\\source\\repos\\Algoritmos\\Algoritmos\\obj\\",
+      "outputPath": "C:\\Users\\WINDOWS\\Documents\\GitHub\\PROYECTOS_PERSONALES\\Algoritmos\\Algoritmos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
